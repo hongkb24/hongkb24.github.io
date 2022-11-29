@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "yarn generate:gh-pages  && push-dir --dir=dist --branch=gh-pages --cleanup --allow-unclean",
+    "deploy": "yarn run generate:gh-pages  && push-dir --dir=dist --branch=gh-pages --cleanup --allow-unclean",
   },
   "devDependencies": {
     "nuxt": "3.0.0"
