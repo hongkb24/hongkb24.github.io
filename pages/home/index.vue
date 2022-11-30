@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    回家干饭 <NuxtLink @click="$router.go(-1)">ToIndex</NuxtLink>
+    回家干饭 <a @click="$router.go(-1)">ToIndex</a>
     <hr>
     <a-timeline>
       <a-timeline-item>Create a services site 2015-09-01</a-timeline-item>
