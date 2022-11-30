@@ -2,7 +2,7 @@
   <div>
     上班~~有空再聊
     <NuxtLink to="/home">ToHome</NuxtLink>
-    <hr>
+    <hr />
     <a-steps :current="1">
       <a-step>
         <!-- <span slot="title">Finished</span> -->
