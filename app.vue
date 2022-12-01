@@ -9,5 +9,4 @@
 </template>
 
 <style scoped lang="scss">
-@import 'ant-design-vue/dist/antd.css';
 </style>
