@@ -3,7 +3,7 @@ const routerBase =
   process.env.DEPLOY_ENV === "GH_PAGES"
     ? {
         router: {
-          base: "/hongkb24.github.io",
+          base: "/hongkb24.github.io/",
         },
       }
     : {};
