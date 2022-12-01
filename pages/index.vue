@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="div">上班~~有空再聊</div>
+    上班~~有空再聊
     <NuxtLink to="/home">ToHome</NuxtLink>
     <hr />
     <a-steps :current="1">
@@ -21,9 +21,4 @@
   </div>
 </template>
 <script lang="ts" setup></script>
-<style scoped lang="scss">
-.div{
-  color: yellow;
-  font-weight: bolder;
-}
-</style>
+<style scoped lang="scss"></style>
