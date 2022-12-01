@@ -31,13 +31,10 @@ export default defineNuxtConfig({
           content: "使用 vue + nuxt.js 技术栈构建而成的博客，记录我的文章。",
         },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [{ rel: "icon", type: "image/x-icon", href: "./static/favicon.ico" }],
     },
   },
 
   ...routerBase,
   buildModules: ["@nuxtjs/eslint-module"],
-  css:[
-    'ant-design-vue/dist/antd.css'
-  ]
 });
