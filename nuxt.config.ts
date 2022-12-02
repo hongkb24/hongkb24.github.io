@@ -7,7 +7,8 @@ const routerBase =
         },
       }
     : {};
-
+import Components from "unplugin-vue-components/vite";
+import { AntDesignVueResolver } from "unplugin-vue-components/resolvers";
 export default defineNuxtConfig({
   app: {
     head: {
@@ -34,9 +35,22 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-
+  vite: {
+    plugins: [
+      Components({
+        resolvers: [AntDesignVueResolver()],
+      }),
+    ],
+    // @ts-expect-error: Missing ssr key
+    ssr: {
+      noExternal: ['ant-design-vue'],
+    },
+  },
   ...routerBase,
   buildModules: ["@nuxtjs/eslint-module"],
+  build: {
+    transpile: ["ant-design-vue"],
+  },
   // plugins: ["@/plugins/antd"],
   // css: ["ant-design-vue/dist/antd.css"],
 });
