@@ -49,9 +49,9 @@ export default defineNuxtConfig({
   // },
   ...routerBase,
   buildModules: ["@nuxtjs/eslint-module"],
-  build: {
-    transpile: ["ant-design-vue"],
-  },
+  // build: {
+  //   transpile: ["ant-design-vue"],
+  // },
   // plugins: ["@/plugins/antd"],
   css: ["ant-design-vue/dist/antd.css"],
 });
