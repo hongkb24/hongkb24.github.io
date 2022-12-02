@@ -35,22 +35,23 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  vite: {
-    // plugins: [
-    //   Components({
-    //     resolvers: [AntDesignVueResolver()],
-    //   }),
-    // ],
-    // @ts-expect-error: Missing ssr key
-    ssr: {
-      noExternal: ['ant-design-vue'],
-    },
-  },
+  vite:false
+  // {
+  //   plugins: [
+  //     Components({
+  //       resolvers: [AntDesignVueResolver()],
+  //     }),
+  //   ],
+  //   // @ts-expect-error: Missing ssr key
+  //   ssr: {
+  //     noExternal: ['ant-design-vue'],
+  //   },
+  // },
   ...routerBase,
   buildModules: ["@nuxtjs/eslint-module"],
-  // build: {
-  //   transpile: ["ant-design-vue"],
-  // },
+  build: {
+    transpile: ["ant-design-vue"],
+  },
   // plugins: ["@/plugins/antd"],
-  // css: ["ant-design-vue/dist/antd.css"],
+  css: ["ant-design-vue/dist/antd.css"],
 });
