@@ -2,8 +2,8 @@
 
 <template>
   <div>
-    回家干饭 <NuxtLink to='/'>ToIndex</NuxtLink>
-    <hr>
+    回家干饭 <NuxtLink to="/">ToIndex</NuxtLink>
+    <hr />
     <a-timeline>
       <a-timeline-item>Create a services site 2015-09-01</a-timeline-item>
       <a-timeline-item
