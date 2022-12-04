@@ -34,5 +34,6 @@ export default defineNuxtConfig({
     }
   },
   ...routerBase,
-  buildModules: ['@nuxtjs/eslint-module', 'plugins/antd.ts'],
+  buildModules: ['@nuxtjs/eslint-module', '@/plugins/antd.ts'],
+  css: ['@/assets/index.scss'],
 })
