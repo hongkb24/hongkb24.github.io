@@ -1,7 +1,7 @@
 <template>
   <div>
-    上班~~有空再聊
-    <NuxtLink to="/home"><div>ToHome</div></NuxtLink>
+    <div>上班~~有空再聊</div>
+    <NuxtLink to="/home">ToHome</NuxtLink>
     <hr />
     <a-steps :current="1">
       <a-step>
