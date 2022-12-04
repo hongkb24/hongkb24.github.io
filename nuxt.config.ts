@@ -31,18 +31,20 @@ export default defineNuxtConfig({
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    }
+    },
   },
   ...routerBase,
-  buildModules: ["@nuxtjs/eslint-module", "@/plugins/antd.ts"],
+  buildModules: ["@nuxtjs/eslint-module"],
   // css: ['@/assets/index.scss'],
   vite: {
     css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "@/assets/index.scss" as *;'
-        }
+      css: {
+        preprocessorOptions: {
+          scss: {
+            additionalData: '@import "@/assets/index.scss";',
+          },
+        },
       },
-    }
+    },
   },
 });

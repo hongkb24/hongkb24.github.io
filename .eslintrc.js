@@ -19,7 +19,7 @@ module.exports = {
       'PascalCase',
       {
         registeredComponentsOnly: true,
-      },
+      }
     ],
     'vue/singleline-html-element-content-newline': [0],
     'vue/multiline-html-element-content-newline': [0],
@@ -28,7 +28,7 @@ module.exports = {
     'vue/max-attributes-per-line': [0],
     'vue/html-closing-bracket-newline': [0],
     'vue/html-indent': [0],
-    // Prettier rules
+     'Prettier' rules
     'max-len': [0, 120],
     code: [0, 120],
     'print-width': [0, 120],
@@ -37,5 +37,5 @@ module.exports = {
     'arrow-parens': [0],
     curly: [0],
     'keyword-spacing': [0],
-  },
+  }
 };
