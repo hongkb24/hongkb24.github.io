@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
-    "ant-design-vue": "^3.2.15",
     "push-dir": "^0.4.1"
   }
 }
